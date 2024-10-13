@@ -4,10 +4,30 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/spacex/css/style.css"/>
-        <link rel="script" href="/spacex/js/script.js"/>
+        <script src="/spacex/js/script.js" defer></script>
         <title>SpaceX</title>
     </head>
 <body>
+    <div id="overlay"></div>
+    <div id="mobile-menu" class="mobile-main-menu">
+        <ul>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Launches</a></li>
+            <li><a href="#">Carrers</a></li>
+            <li><a href="#">Updates</a></li>
+            <li><a href="#">Shop</a></li>
+            <li class="mobile-only"><a href="falcon9.html">FLACON9</a></li>
+            <li class="mobile-only"><a href="falconheavy.html">FALCON HEAVY</a></li>
+            <li class="mobile-only"><a href="falconheavy.html">FALCON HEAVY</a></li>
+            <li class="mobile-only"><a href="dragon.html">DRAGON</a></li>
+            <li class="mobile-only"><a href="starship.html">STARSHIP</a></li>
+            <li class="mobile-only"><a href="humanspacelight.html">HUMAN SPACELIGHT</a></li>                <li><a href="rideshare.html">RIDESHARE</a></li>
+            <li class="mobile-only"><a href="starshield.html">STARSHIELD</a></li>
+            <li class="mobile-only"><a href="starlink.html">STARLINK</a></li>
+            <li class="mobile-only"><a href="shop.html">SHOP</a></li>
+            
+        </ul>
+    </div>
     <header class="main-header">
         <div class="logo">
             <a href="index.html">
@@ -25,14 +45,19 @@
                 <li><a href="starshield.html">STARSHIELD</a></li>
                 <li><a href="starlink.html">STARLINK</a></li>
                 <li><a href="shop.html">SHOP</a></li>
-                
             </ul>
-
         </nav>
     </header>
+
+    <button id="menu-btn" class="hamburger" type="button"> 
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+    </button>
+
     <section class="Sec-A">
-        <video autoplay muted loop playsinline class="background-video">
-            <source src="/spacex/videos/videoD.mp4" type="video/mp4">
+        <video autoplay muted loop plays-inline class="background-video">
+            <source src="/spacex/img/sec-a_video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="sec-inner">
@@ -98,6 +123,10 @@
         </div>
     </section>
     <section class="Sec-D">
+        <video autoplay muted loop plays-inline class="background-video">
+            <source src="/spacex/img/sec-d.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <div class="sec-inner">
             <h4>recent mission</h4>
             <h2>polaris dawn</h2>
