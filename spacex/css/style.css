@@ -116,7 +116,7 @@ section{
     animation-fill-mode:both ;
 }
 
-.Sec-A{
+.Sec-A,.Sec-D{
     position: relative;
     height: 100vh;
     background-position: center center;
@@ -126,10 +126,13 @@ section{
     overflow: hidden;
 }
 
-.background-video{
+.background-video {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     z-index: -1;
 }
 .btn{
@@ -308,7 +311,25 @@ overflow: hidden;
 .mobile-main-menu ul li a:hover{
     color:#aaa;
 }
+.Sec-B{
+    background-image: url(/spacex/img/sec-b.jpg);
+}
+.Sec-C{
+    background-image: url(/spacex/img/sec-c.jpg);
+}
+.Sec-E{
+    background-image: url(/spacex/img/sec-e.jpg);
+}
+.Sec-F{
+    background-image: url(/spacex/img/sec-f.jpg);
+}
 
+.bg-falcon-9{
+    background-image: url();
+}
+.scetion-annimate{
+    
+}
 /*animations*/
 @keyframes fadeInUp{
     0%{
@@ -335,18 +356,7 @@ overflow: hidden;
         transform: translateY(0);
     }
 }
-.Sec-B{
-    background-image: url(/spacex/img/sec-b.jpg);
-}
-.Sec-C{
-    background-image: url(/spacex/img/sec-c.jpg);
-}
-.Sec-E{
-    background-image: url(/spacex/img/sec-e.jpg);
-}
-.Sec-F{
-    background-image: url(/spacex/img/sec-f.jpg);
-}
+
 @media(max-width:960px){
     .desktop-main-menu{
         display: none;
