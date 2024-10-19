@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif, Roboto;
+}
+
+.header-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5vh;
+    z-index: 1;
+}
+
+.logo {
+    padding-left: 10vh;
+    width: 45vh;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    gap: 4vh;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-item {
+    font-size: 2.2vh;
+    cursor: pointer;
+}
+
+.link {
+    font-size: 2.2vh;
+    padding-right: 10vh;
+    cursor: pointer;
+    color: white;
+}
+
+/* Section A */
+.sec {
+    padding: 40vh 10vh;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    z-index: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Sections B, C, D, E, F */
+.sec-b,
+.sec-c,
+.sec-d,
+.sec-e,
+.sec-f {
+    padding: 40vh 10vh;
+    position: relative;
+    /* Allow these sections to flow normally for scrolling */
+    height: 100vh;
+    /* Ensure each section takes the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 3vh;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 6vh;
+    line-height: 1.3;
+}
+
+/* Common button styling across all sections */
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    padding: 2vh 5vh;
+    margin-right: 170vh; /* Adjusted padding for consistent size */
+    color: white;
+    font-weight: bold;
+    border: 0.4vh solid white;
+    text-transform: uppercase;
+    position: relative;
+    transition: background 0.6s ease-in, color 0.6s ease-in; /* Smooth transition for background and color */
+}
+
+/* Hover effect for all buttons */
+.btn:hover {
+    color: black;
+    background: white;
+    z-index: -1; /* Ensure button stays above content */
+    transform: translateY(-10%); /* Subtle lift on hover */
+    transition: all 0.6s ease-in-out; /* Smooth transition for hover */
+}
+
+/* Example background images for sections B to F */
+.sec-b {
+    background-image: url('../public/sec-b.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.sec-c {
+    background-image: url('../public/sec-c.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.sec-d {
+    background-image: url('../public/sec-d.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.sec-e {
+    background-image: url('../public/sec-f.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.sec-f {
+    background-image: url('../public/sec-g.jpg');
+    background-size: cover;
+    background-position: center;
+}
