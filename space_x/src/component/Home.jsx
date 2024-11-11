@@ -1,6 +1,7 @@
 import React from "react";
 import "../index.css"; // Make sure to import the CSS for styles
-
+import './ScrollArrow';
+import ScrollArrow from "./ScrollArrow";
 const Home = () => {
     return (
         <div className="header-section">
@@ -31,7 +32,7 @@ const Home = () => {
                     <span>Rewatch</span>
                 </div>
             </div>
-            
+            <ScrollArrow/>
         </div>
     );
 };

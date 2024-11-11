@@ -5,6 +5,7 @@ import Sec_c from './component/Sec_c';
 import Sec_d from './component/Sec_d';
 import Sec_e from './component/Sec_e';
 import Sec_f from './component/Sec_f';
+import Footer from './component/footer';
 import '../src/index.css';
 
 
@@ -19,6 +20,7 @@ function App() {
       <Sec_d/>
       <Sec_e/>
       <Sec_f/>
+      <Footer/>
     </>
   )
 }

@@ -327,9 +327,7 @@ overflow: hidden;
 .bg-falcon-9{
     background-image: url();
 }
-.scetion-annimate{
-    
-}
+
 /*animations*/
 @keyframes fadeInUp{
     0%{
